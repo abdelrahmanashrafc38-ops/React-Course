@@ -16,7 +16,7 @@ export default function Form({ onAddItems }) {
     SetDescription("");
   }
   return (
-    <form className="add-form" onSubmit={handleSubmit}>
+    <form className="add-form" onSubmit={(e) => handleSubmit(e)}>
       <h3>What do you need for your 😍 trip?</h3>
       <select
         value={quantity}
