@@ -164,8 +164,6 @@ function FormSplitBill({ selectedFriend, handleOnSplitBill }) {
     e.preventDefault();
     if (!billValue || !userExpense) return;
     handleOnSplitBill(whoIsPaying === "user" ? friendExpense : -userExpense);
-    // setBillValue("");
-    // setUserExpense("");
   }
 
   return (
